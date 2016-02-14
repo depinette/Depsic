@@ -1,0 +1,7 @@
+module CDispatch [system]
+{ 
+header "/usr/local/include/dispatch/dispatch.h" 
+link "dispatch"
+export *
+}
+

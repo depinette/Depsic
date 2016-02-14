@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B8DF101C5CFF9000503A9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF0F1C5CFF9000503A9C /* main.swift */; };
+		13B8DF191C5CFFAD00503A9C /* CaseInsensitiveDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF121C5CFFAD00503A9C /* CaseInsensitiveDictionary.swift */; };
+		13B8DF1A1C5CFFAD00503A9C /* FDmacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF131C5CFFAD00503A9C /* FDmacros.swift */; };
+		13B8DF1C1C5CFFAD00503A9C /* GCDWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF151C5CFFAD00503A9C /* GCDWrappers.swift */; };
+		13B8DF1D1C5CFFAD00503A9C /* SCGIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF161C5CFFAD00503A9C /* SCGIParser.swift */; };
+		13B8DF1E1C5CFFAD00503A9C /* Depsic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF171C5CFFAD00503A9C /* Depsic.swift */; };
+		13B8DF1F1C5CFFAD00503A9C /* SocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DF181C5CFFAD00503A9C /* SocketServer.swift */; };
+		13C34BC91C65E3580038BDA9 /* MessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C34BC81C65E3580038BDA9 /* MessageApp.swift */; };
+		13C34BCB1C65F0910038BDA9 /* DepsicClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C34BCA1C65F0910038BDA9 /* DepsicClosure.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1369E4391C5CC5B700B7299A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1369E43B1C5CC5B700B7299A /* Simplecgiapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Simplecgiapp; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B8DF0F1C5CFF9000503A9C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Depsic/Sources/main.swift; sourceTree = SOURCE_ROOT; };
+		13B8DF121C5CFFAD00503A9C /* CaseInsensitiveDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaseInsensitiveDictionary.swift; path = Depsic/Sources/CaseInsensitiveDictionary.swift; sourceTree = "<group>"; };
+		13B8DF131C5CFFAD00503A9C /* FDmacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FDmacros.swift; path = Depsic/Sources/FDmacros.swift; sourceTree = "<group>"; };
+		13B8DF151C5CFFAD00503A9C /* GCDWrappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDWrappers.swift; path = Depsic/Sources/GCDWrappers.swift; sourceTree = "<group>"; };
+		13B8DF161C5CFFAD00503A9C /* SCGIParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCGIParser.swift; path = Depsic/Sources/SCGIParser.swift; sourceTree = "<group>"; };
+		13B8DF171C5CFFAD00503A9C /* Depsic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Depsic.swift; path = Depsic/Sources/Depsic.swift; sourceTree = "<group>"; };
+		13B8DF181C5CFFAD00503A9C /* SocketServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketServer.swift; path = Depsic/Sources/SocketServer.swift; sourceTree = "<group>"; };
+		13C34BC81C65E3580038BDA9 /* MessageApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageApp.swift; path = Depsic/Sources/MessageApp.swift; sourceTree = SOURCE_ROOT; };
+		13C34BCA1C65F0910038BDA9 /* DepsicClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepsicClosure.swift; path = Depsic/Sources/DepsicClosure.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1369E4381C5CC5B700B7299A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1369E4241C5CC42D00B7299A = {
+			isa = PBXGroup;
+			children = (
+				13B8DF111C5CFF9A00503A9C /* Depsic */,
+				1369E4351C5CC59400B7299A /* Simplecgiapp */,
+				1369E43C1C5CC5B700B7299A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1369E4351C5CC59400B7299A /* Simplecgiapp */ = {
+			isa = PBXGroup;
+			children = (
+				13B8DF0F1C5CFF9000503A9C /* main.swift */,
+				13C34BC81C65E3580038BDA9 /* MessageApp.swift */,
+			);
+			path = Simplecgiapp;
+			sourceTree = "<group>";
+		};
+		1369E43C1C5CC5B700B7299A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1369E43B1C5CC5B700B7299A /* Simplecgiapp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B8DF111C5CFF9A00503A9C /* Depsic */ = {
+			isa = PBXGroup;
+			children = (
+				13B8DF211C5CFFF000503A9C /* Utils */,
+				13B8DF201C5CFFD200503A9C /* LinuxCompat */,
+				13B8DF161C5CFFAD00503A9C /* SCGIParser.swift */,
+				13B8DF181C5CFFAD00503A9C /* SocketServer.swift */,
+				13B8DF171C5CFFAD00503A9C /* Depsic.swift */,
+				13C34BCA1C65F0910038BDA9 /* DepsicClosure.swift */,
+			);
+			name = Depsic;
+			sourceTree = "<group>";
+		};
+		13B8DF201C5CFFD200503A9C /* LinuxCompat */ = {
+			isa = PBXGroup;
+			children = (
+				13B8DF151C5CFFAD00503A9C /* GCDWrappers.swift */,
+				13B8DF131C5CFFAD00503A9C /* FDmacros.swift */,
+			);
+			name = LinuxCompat;
+			sourceTree = "<group>";
+		};
+		13B8DF211C5CFFF000503A9C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13B8DF121C5CFFAD00503A9C /* CaseInsensitiveDictionary.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1369E43A1C5CC5B700B7299A /* Simplecgiapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1369E4401C5CC5B700B7299A /* Build configuration list for PBXNativeTarget "Simplecgiapp" */;
+			buildPhases = (
+				1369E4371C5CC5B700B7299A /* Sources */,
+				1369E4381C5CC5B700B7299A /* Frameworks */,
+				1369E4391C5CC5B700B7299A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simplecgiapp;
+			productName = Simplecgiapp;
+			productReference = 1369E43B1C5CC5B700B7299A /* Simplecgiapp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1369E4251C5CC42D00B7299A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					1369E43A1C5CC5B700B7299A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 1369E4281C5CC42D00B7299A /* Build configuration list for PBXProject "Depsic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1369E4241C5CC42D00B7299A;
+			productRefGroup = 1369E43C1C5CC5B700B7299A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1369E43A1C5CC5B700B7299A /* Simplecgiapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1369E4371C5CC5B700B7299A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C34BCB1C65F0910038BDA9 /* DepsicClosure.swift in Sources */,
+				13B8DF101C5CFF9000503A9C /* main.swift in Sources */,
+				13C34BC91C65E3580038BDA9 /* MessageApp.swift in Sources */,
+				13B8DF1C1C5CFFAD00503A9C /* GCDWrappers.swift in Sources */,
+				13B8DF1E1C5CFFAD00503A9C /* Depsic.swift in Sources */,
+				13B8DF1D1C5CFFAD00503A9C /* SCGIParser.swift in Sources */,
+				13B8DF191C5CFFAD00503A9C /* CaseInsensitiveDictionary.swift in Sources */,
+				13B8DF1F1C5CFFAD00503A9C /* SocketServer.swift in Sources */,
+				13B8DF1A1C5CFFAD00503A9C /* FDmacros.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1369E4291C5CC42D00B7299A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1369E42A1C5CC42D00B7299A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1369E4411C5CC5B700B7299A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1369E4421C5CC5B700B7299A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1369E4281C5CC42D00B7299A /* Build configuration list for PBXProject "Depsic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1369E4291C5CC42D00B7299A /* Debug */,
+				1369E42A1C5CC42D00B7299A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1369E4401C5CC5B700B7299A /* Build configuration list for PBXNativeTarget "Simplecgiapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1369E4411C5CC5B700B7299A /* Debug */,
+				1369E4421C5CC5B700B7299A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1369E4251C5CC42D00B7299A /* Project object */;
+}
