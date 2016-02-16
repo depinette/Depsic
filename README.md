@@ -66,8 +66,8 @@ Do the same changes to the configuration file in:
 
     sudo nano /etc/nginx/nginx.conf
 
-
-## install swift ##
+## Compilation on Linux ##
+### install swift ###
 On Linux, you also need to install swift.
 
 Use the following tutorials:
@@ -78,6 +78,26 @@ or
 
 http://www.alwaysrightinstitute.com/swift-on-linux-in-vbox-on-osx/
 
+You will also need libdispatch (aka GCD), follow the tutorial here (section Grand Central Dispatch):
+http://www.alwaysrightinstitute.com/swift-on-linux-in-vbox-on-osx/
 
+### Build ###
 
+get the source code
+
+    git clone http://github.com/depinette/Depsic
+
+Build CDispatch.
+
+CDispatch is swift module encapsulation of libdispatch.
+
+    make -C ./Depsic/CDispatch
+
+Build the app
+
+    swift build --chdir ./Depsic/Depsic
+    
+Launch the app
+
+    ./Depsic/Depsic/.build/debug/simplecgiapp
 
