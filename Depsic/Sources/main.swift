@@ -115,7 +115,7 @@ scgi.forRequest( {
 
 
 scgi.forRequest({ (request:RequestInfo) -> Bool in
-        return request.uri == "/form3"
+        return request.uri == "/form"
     },
     respond: { (request:Request<String>) -> Response<String> in
         return Response<String>(
