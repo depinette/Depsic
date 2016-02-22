@@ -278,8 +278,9 @@ public class Depsic : SocketServerDelegate, ConnectedClientDelegate
 //MARK: HTTP Send helpers
 extension ConnectedClient
 {
-    func sendHeaders(var headers:CaseInsensitiveDictionary<String>)
+    func sendHeaders(headers:CaseInsensitiveDictionary<String>)
     {
+        var headers = headers
         self.sendString("Status: ")
         if let status = headers.removeValueForKey("Status") {
             self.sendString(status)
