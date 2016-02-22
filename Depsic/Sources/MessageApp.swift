@@ -54,7 +54,8 @@ public class MessageApp
             //add new message
             if let body = request.body {
                 pthread_mutex_lock(&self.mutexMessages)
-                let messageId = messages.count
+                
+                let messageId = messages.reduce(0, combine: {max($0, $1.0) })+1
                 messages[messageId] = body
                 pthread_mutex_unlock(&self.mutexMessages)
                 responseBody = String(messageId)
@@ -81,7 +82,7 @@ public class MessageApp
                 let message = messages[messageId]
                 pthread_mutex_unlock(&self.mutexMessages)
                 if message != nil {
-                    responseBody = message!
+                    responseBody = "{\"id\":\"" + String(messageId) + "\", \"msg\":\"" + message! + "\"}"
                 } else {
                     throw HTTPCode.Status_404
                 }
@@ -91,7 +92,7 @@ public class MessageApp
                 let message = messages.removeValueForKey(messageId)
                 pthread_mutex_unlock(&self.mutexMessages)
                 if  message != nil {
-                    responseBody = message!
+                    responseBody = "{\"id\":\"" + String(messageId) + "\", \"msg\":\"" + message! + "\"}"
                 } else {
                     throw HTTPCode.Status_404
                 }
@@ -102,14 +103,18 @@ public class MessageApp
         else if (request.method == "GET") {
 
             pthread_mutex_lock(&self.mutexMessages)
-            for message in self.messages.values {
-                responseBody.appendContentsOf(message + "\n")
+            
+            responseBody.appendContentsOf("[")
+            for kvp in self.messages {
+                //better use a json library when available on linux
+                responseBody.appendContentsOf("{\"id\":\"" + String(kvp.0) + "\", \"msg\":\"" + kvp.1 + "\"},")
             }
+            responseBody.appendContentsOf("]")
             pthread_mutex_unlock(&self.mutexMessages)
         } else {
             throw HTTPCode.Status_400
         }
-        return Response<String>(content:responseBody)
+        return Response<String>(headers:["Content-Type":"text/json"], content:responseBody)
     }
 }
 
