@@ -70,6 +70,10 @@ Do the same changes to the configuration file in:
 ### install swift ###
 On Linux, you also need to install swift.
 
+the code has been tested with the version from december 10, 2015:
+
+https://swift.org/builds/swift-2.2-branch/ubuntu1510/swift-2.2-SNAPSHOT-2015-12-10-a/swift-2.2-SNAPSHOT-2015-12-10-a-ubuntu15.10.tar.gz
+
 Use the following tutorials:
 
 http://www.makeuseof.com/tag/start-programming-swift-ubuntu/
