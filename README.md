@@ -100,12 +100,18 @@ CDispatch is swift module encapsulation of libdispatch.
 Build the app
 
     swift build --chdir ./Depsic/Depsic
-    
+ 
+## Compilation on OSX ##
+
+Use Xcode
+
+## Test ##
+
 Launch the app
 
     ./Depsic/Depsic/.build/debug/simplecgiapp
 
-### Test ###
+Connect with curl
 
     curl localhost:8080/
     
