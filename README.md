@@ -87,11 +87,11 @@ http://www.alwaysrightinstitute.com/swift-on-linux-in-vbox-on-osx/
 
 ### Build ###
 
-get the source code
+Get the source code
 
     git clone http://github.com/depinette/Depsic
 
-Build CDispatch.
+Build CDispatch
 
 CDispatch is swift module encapsulation of libdispatch.
 
