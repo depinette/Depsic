@@ -1,7 +1,6 @@
 # Depsic
-A simple Simple CGI framework in Swift. Works on OSX and Linux.
 
-Depsic works on OSX and Linux (Ubuntu 15.10).
+Depsic is a simple Simple CGI framework in Swift. It works on OSX and Linux (Ubuntu 15.10).
 
 Associated with a web server like nginx, it lets you handle http requests with closures:
 
@@ -106,6 +105,10 @@ Build the app
 Use Xcode
 
 ## Test ##
+
+Launch nginx
+
+    nginx
 
 Launch the app
 
