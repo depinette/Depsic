@@ -1,7 +1,6 @@
 # Depsic
-A simple Simple CGI framework in Swift. Works on OSX and Linux.
 
-Depsic works on OSX and Linux (Ubuntu 15.10).
+Depsic is a simple Simple CGI framework in Swift. It works on OSX and Linux (Ubuntu 15.10).
 
 Associated with a web server like nginx, it lets you handle http requests with closures:
 
@@ -70,6 +69,10 @@ Do the same changes to the configuration file in:
 ### install swift ###
 On Linux, you also need to install swift.
 
+The code has been tested with the version from december 10, 2015:
+
+https://swift.org/builds/swift-2.2-branch/ubuntu1510/swift-2.2-SNAPSHOT-2015-12-10-a/swift-2.2-SNAPSHOT-2015-12-10-a-ubuntu15.10.tar.gz
+
 Use the following tutorials:
 
 http://www.makeuseof.com/tag/start-programming-swift-ubuntu/
@@ -83,11 +86,11 @@ http://www.alwaysrightinstitute.com/swift-on-linux-in-vbox-on-osx/
 
 ### Build ###
 
-get the source code
+Get the source code
 
     git clone http://github.com/depinette/Depsic
 
-Build CDispatch.
+Build CDispatch
 
 CDispatch is swift module encapsulation of libdispatch.
 
@@ -96,8 +99,23 @@ CDispatch is swift module encapsulation of libdispatch.
 Build the app
 
     swift build --chdir ./Depsic/Depsic
-    
+ 
+## Compilation on OSX ##
+
+Use Xcode
+
+## Test ##
+
+Launch nginx
+
+    nginx
+
 Launch the app
 
     ./Depsic/Depsic/.build/debug/simplecgiapp
 
+Connect with curl
+
+    curl localhost:8080/
+    
+    
