@@ -114,7 +114,7 @@ public class MessageApp
         } else {
             throw HTTPCode.Status_400
         }
-        return Response<String>(headers:["Content-Type":"text/json"], content:responseBody)
+        return Response<String>(headers:["Content-Type":"text/json", "Cache-control":"no-cache"], content:responseBody)
     }
 }
 
